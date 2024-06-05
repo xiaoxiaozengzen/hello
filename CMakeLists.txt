@@ -9,6 +9,6 @@ message(STATUS "PROJECT_BINARAY_DIR: ${PROJECT_BINARAY_DIR}")
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
-ADD_LIBRARY(hello STATIC hello.cpp)
+ADD_LIBRARY(hello SHARED hello.cpp)
 ADD_EXECUTABLE(greet main.cpp)
 TARGET_LINK_LIBRARIES(greet hello)
